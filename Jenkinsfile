@@ -13,6 +13,15 @@ agent any
                 }
 
             }
+            stage('Unit Tests by Maven'){
+
+                steps{
+
+                    sh'mvn test'
+
+                }
+
+            }
 
         }
 
